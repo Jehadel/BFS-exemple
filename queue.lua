@@ -1,9 +1,9 @@
 -- This module implements a Queue class that behave like a queue
 -- inspired from the book « Programming in Lua » https://www.lua.org/pil/11.4.html
 
-Object = require 'classic'
+local Object = require 'classic'
 
-Queue = Object:extend()
+local Queue = Object:extend()
 
 function Queue:new()
   self.first = 0
