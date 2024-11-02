@@ -25,11 +25,11 @@ function breadth_first_search(start)
 
         -- iterate through its adjacent nodes (neighbours)
         for idx, neighbour in ipairs(current_node.lst_neighbours) do
-            -- if the adjacent nodes have not been visited yet, then insert them in queue
+            -- if the adjacent nodes have not been visited yet, then insert them into queue
             if neighbour.visited == false then
                 -- we set the node to visited
                 neighbour.visited = true
-                -- insert it intho the queue
+                -- insert it into queue
                 queue:enqueue(neighbour)
             end
         end
@@ -53,9 +53,3 @@ table.insert(nodeD.lst_neighbours, nodeE)
 
 
 breadth_first_search(nodeA)
-
-
-
-
-
-
